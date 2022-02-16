@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Hello</h1>
+      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
     </div>
   );
 }
